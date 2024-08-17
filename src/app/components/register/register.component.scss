@@ -1,0 +1,82 @@
+:root {
+    font-size: 16px;
+}
+
+#body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    height: 90.5vh;
+    background: linear-gradient(90deg, rgb(9, 224, 56) 0%, rgb(29, 29, 109) 35%, rgb(65, 10, 168) 100%);
+}
+
+#header{
+    font-size: xx-large;
+    font-weight: 900;
+    margin-top: 2em;
+}
+
+#form{
+    font-size: large;
+    margin-top: 4.5em;
+}
+
+#button-id{
+    border-radius: 1em;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 45em;
+    width: 35em;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+}
+
+form {
+    width: 100%;
+    padding: 2em;
+    justify-content: center;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #002664;
+    font-weight: bold;
+}
+
+input {
+    justify-content: center;
+    width: 60%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.25em;
+    border: 1px solid #cccccc;
+}
+
+.validation {
+    color: red;
+    display: block;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: rgb(29, 29, 109);
+    color: white;
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+button[disabled] {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

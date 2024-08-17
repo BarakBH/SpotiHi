@@ -1,0 +1,14 @@
+
+<div id="header">
+    <div id="logo-and-button">
+        <img id="spotify-logo" src="../../../assets/images/Spotify_icon.svg.png" alt="spotihi"/>
+        <button id="button" (click)="navigateToFirstPage()" *ngIf="showMainButton">ראשי</button>
+        <div id="space-div" *ngIf="!showMainButton"></div>
+    </div>
+    
+    <h4 id="name"> {{routeName}} </h4>
+    <h5 id="timer"> 
+        <span id="span">{{timeNow}}</span>
+    </h5>
+    
+</div>

@@ -1,0 +1,9 @@
+<div *ngIf="disc">
+    <h2>{{ disc.name }}</h2>
+    <img [src]="disc.images[0]?.url" alt="{{ disc.name }}" />
+    <p>Release Date: {{ disc.release_date }}</p>
+    <p>Type: {{ disc.type }}</p>
+    <p>Artists: {{ disc.artists.join(', ') }}</p>
+    <p>Playlists: {{ disc.playlists.join(', ') }}</p>
+  </div>
+  

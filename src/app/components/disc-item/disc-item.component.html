@@ -1,0 +1,6 @@
+<li>
+    <a [routerLink]="['/disc-details', disc.id]">
+      {{ disc.name }} - {{ disc.release_date }}
+      <img [src]="disc.images[0]?.url" alt="{{ disc.name }}" />
+    </a>
+  </li>

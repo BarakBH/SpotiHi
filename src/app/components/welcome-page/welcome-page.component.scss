@@ -1,0 +1,51 @@
+:root{
+    font-size: 16px;
+}
+
+#body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    height: 90.5vh;
+    // background-image: url(../../../assets/images/Spotify_background.png);
+    // background-size: 100% 90vh;
+    // background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgb(9, 224, 56) 0%, rgb(29, 29, 109) 35%, rgb(65, 10, 168) 100%);
+}
+
+#welcome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15em;
+    width: 25em;
+    background-color: #FFFFFF;
+    border-radius: 1em;
+}
+
+button{
+    width: 11.25em;
+    margin: 1.125em;
+    height: 3.125em;
+    border-radius: 0.4em;
+    color: #024452;
+    font-size: x-large;
+    font-weight: bold;
+    border: 1px solid #024452;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fdfdfd;
+    border: 2px solid #024452;
+    font-weight: bold;
+    width: 12.25em;
+}
+
+span{
+    padding-right: 2em;
+}

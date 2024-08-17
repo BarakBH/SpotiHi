@@ -1,0 +1,56 @@
+:root {
+    font-size: 16px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    padding: 0 1em; 
+}
+
+#space-div{
+    width: 10em;
+}
+
+#logo-and-button {
+    display: flex;
+    align-items: center;
+}
+
+#spotify-logo {
+    width: 3em;
+    height: 3em;
+    // margin-top: 2.5em;
+}
+#button{
+    margin-left: 5em;
+    margin: 2em;
+    background-color: #FFFFFF;
+    color:#002664;
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#name {
+    color: #002664;
+    font-size: 1.75em;
+    font-family: Tahoma;
+    font-weight: bold;
+    margin: 0;
+}
+
+#timer {
+    direction: rtl;
+    color: #002664;
+    font-size: 1.125em;
+    font-family: Tahoma;
+    font-weight: bold;
+    margin: 0;
+}
+
+#span{
+    padding: 1em;
+}

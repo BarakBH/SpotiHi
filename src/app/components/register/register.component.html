@@ -1,0 +1,41 @@
+<div id="body-container">
+    <div id="form-container">
+      <div id="header">רישום ל-ספוטיהי</div>
+  
+      <form id="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div id="email-container"> 
+          <label for="email">אימייל</label>
+          <input id="email" formControlName="email" type="email"/>
+          <div class="validation" *ngIf="registerForm.get('email')!.invalid && registerForm.get('email')!.touched">
+            <div class="validation" *ngIf="registerForm.get('email')!.hasError('required')">שדה זה הינו חובה.</div>
+            <div class="validation" *ngIf="registerForm.get('email')!.hasError('email')">נא להכין אימייל תיקני</div>
+          </div>
+        </div>
+  
+        <div id="username-container">
+          <label for="username">שם משתמש</label>
+          <input id="username" formControlName="username" type="text"/>
+          <div class="validation" *ngIf="registerForm.get('username')!.invalid && registerForm.get('username')!.touched">
+            <div class="validation" *ngIf="registerForm.get('username')!.hasError('required')">שדה זה הינו חובה.</div>
+            <div class="validation" *ngIf="registerForm.get('username')!.hasError('pattern')">
+              שם משתמש חייב להכיל רק אותיות באנגלית, מספרים ולא יכול להתחיל עם רווח.
+            </div>
+          </div>
+        </div>
+  
+        <div id="password-container">
+          <label for="password">סיסמה</label>
+          <input id="password" formControlName="password" type="password"/>
+          <div class="validation" *ngIf="registerForm.get('password')!.invalid && registerForm.get('password')!.touched">
+            <div class="validation" *ngIf="registerForm.get('password')!.hasError('required')">שדה זה הינו חובה.</div>
+            <div class="validation" *ngIf="registerForm.get('password')!.hasError('pattern')">
+              סיסמה חייבת להיות באנגלית, להכיל לפחות אות גדולה, ספרה ובלי רווח.
+            </div>
+          </div>
+        </div>
+  
+        <button id="button-id" type="submit" [disabled]="registerForm.invalid">רישום</button>
+      </form>
+    </div>
+  </div>
+  
